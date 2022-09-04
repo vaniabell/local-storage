@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <script src="assets/js/main.js"></script>
+ <link rel="stylesheet" href="/assets/css/main.css">
     <title>Document</title>
 </head>
 
 <body>
-    <nav class="site-header sticky-top py-1">
+   
+    <!--<nav class="site-header sticky-top py-1">
         <div class="container d-flex flex-column flex-md-row justify-content-between">
             <a class="py-2" href="#" aria-label="Product">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
@@ -35,49 +35,50 @@
             <a class="py-2 d-none d-md-inline-block" href="#">Info</a>
         </div>
     </nav>
-
     <!-- CONTENIDO DE TU PAGINA -->
-    <div class="container">
-        <h1>Contenido de tu pagina</h1>
+    <div class="row">
+        <div class="col text-left">
+        <img src="https://th.bing.com/th/id/R.e0443f63c7bba4bb44e214d12eeb773b?rik=wDD3gmLjckdN5g&riu=http%3a%2f%2fpurepng.com%2fpublic%2fuploads%2flarge%2f11498493571qdikf8k49uogdl7steagkmhic6kvjidf2rf5ga0shxskr9xztcke16a9mdpkns3gloegtowd2ckyg0vk24x1w1pcofyzokcrx1v4.png&ehk=H6Yy79qKNKd6pNNfKqim0rDHtvb3jHxOF%2bxmHbXmoMw%3d&risl=&pid=ImgRaw&r=0" height="290px" width="500px" alt="">
+        </div>
+        <div class="col text-right">
+            <img src="https://1.bp.blogspot.com/-32bOEgKdJ6Q/Xz7GBzSa4PI/AAAAAAAKLA4/UpAZB4-XaIkjVU_qYnFR9fkL4thUqHyHwCLcBGAsYHQ/s1600/Seachell_HF_Element12.png" height="300px"  alt="">
+            </div>
     </div>
-    <!-- CONTENIDO DE TU PAGINA -->
-
-    <footer class="p-5 mt-auto">
-        <div class="row">
-            <div class="col-6 col-md">
-                <h5>Features</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Cool stuff</a></li>
-                    <li><a class="text-muted" href="#">Random feature</a></li>
-
-                </ul>
-            </div>
-            <div class="col-6 col-md">
-                <h5>Resources</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Resource</a></li>
-                    <li><a class="text-muted" href="#">Resource name</a></li>
-
-                </ul>
-            </div>
-            <div class="col-6 col-md">
-                <h5>Resources</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Business</a></li>
-                    <li><a class="text-muted" href="#">Education</a></li>
-
-                </ul>
-            </div>
-            <div class="col-6 col-md">
-                <h5>About</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Team</a></li>
-                    <li><a class="text-muted" href="#">Locations</a></li>
-
-                </ul>
+    <div class="container text-center mt-5">
+          <h1 id="titulo"> To Do List </h1>
+        
+         <div class="row">
+            <div class="offset-md-3 col-md-6">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="nombreInput">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-primary btn-block mb-2" onclick="agregarNombre()">Agregar</button>
+                    <button type="button" class="btn btn-danger btn-block mb-2" onclick="limpiarStorage()">Limpiar</button>
+                    <!-- <button type="button" class="btn btn-primary btn-block mb-2" onclick="actualizarLista()">Actualizar</button> -->
+                </div>
+                <div class="col-md-12 mt-3">
+                    <ul class="list-group" id="lista">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            A list item
+                            <button type="button" class="btn btn-danger btn-sm"> X</button>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </footer>
+    </div>
+   <div class="row">
+    <div class="col">
+        <img src="https://th.bing.com/th/id/R.195f54d55cf00d6e8b74de068898e1ee?rik=rfpT63Z%2fHW9%2f3A&riu=http%3a%2f%2fcdn130.picsart.com%2f251120307000212.png&ehk=g3P26pcaN%2b5mT4MYEcUDuUEHpDaUYLVonk4sulas%2bPg%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" height="200px" alt="">
+    </div>
+    
+   </div>
+    <!-- CONTENIDO DE TU PAGINA -->
+
 </body>
+<script src="/assets/js/main.js"></script>
 
 </html>
