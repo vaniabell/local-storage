@@ -83,3 +83,15 @@ function editar(nombre) {
 (()=>{
     actualizarLista();
 })()
+
+nombreInput.addEventListener("keypress", function (event) {
+
+    if (event.key === "Enter") {
+
+       
+
+        agregarNombre();
+
+    }
+
+});
