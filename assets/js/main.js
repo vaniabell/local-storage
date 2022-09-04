@@ -40,14 +40,14 @@ function actualizarLista() {
         iconoBasura.classList.add("fa", "fa-trash");
         btnEliminar.appendChild(iconoBasura);
 
-        btnEliminar.classList.add("btn", "btn-danger", "float-right");
+        btnEliminar.classList.add("btn", "btn-outline-danger", "float-right");
         btnEliminar.addEventListener("click", () => deleteIndividual(nombre));
         // btnEliminar.setAttribute("title", "Eliminar");
         // btnEliminar.textContent = "Eliminar";
         li.appendChild(btnEliminar);
 
         const btnedit = document.createElement("button");
-        btnedit.classList.add("btn", "btn-warning", "float-right", "mr-2");
+        btnedit.classList.add("btn", "btn-outline-warning", "float-right", "mr-2");
 
         const iconoEdit = document.createElement("i");
         iconoEdit.classList.add("fa", "fa-edit");
